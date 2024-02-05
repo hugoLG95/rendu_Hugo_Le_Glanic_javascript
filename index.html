@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@7/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simple-lightbox.min.css"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <button id="theme">Dark mode</button>
+    <div class="message-error">
+      <ul></ul>
+    </div>
+    <div class="message-success">
+      <h1>Votre formulaire a bien été envoyé</h1>
+    </div>
+    <form id="formulaire" novalidate>
+      <div>
+        <label for="nom">Nom</label>
+        <input type="text" name="nom" id="nom" />
+      </div>
+      <div>
+        <label for="pseudo">Prénom</label>
+        <input type="text" name="pseudo" id="pseudo" />
+      </div>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div>
+        <label for="radios"
+          >Seconde :
+          <input type="radio" name="radios" id="radio1" value="radio1"
+        /></label>
+        <label for="radio1"
+          >Première :
+          <input type="radio" name="radios" id="radio2" value="radio2"
+        /></label>
+        <label for="radio2"
+          >Terminale :
+          <input type="radio" name="radios" id="radio3" value="radio3"
+        /></label>
+      </div>
+      <div>
+        <label for="axe">Mon axe :</label>
+        <select name="axe" id="axe">
+          <option value="">Choisir mon axe</option>
+          <option value="axe1">Axe Coding</option>
+          <option value="axe2">Axe Com et Marketing</option>
+          <option value="axe3">Axe 3D</option>
+          <option value="axe4">Axe Créa</option>
+          <option value="axe5">Axe JV</option>
+        </select>
+      </div>
+
+      <button type="submit">S'inscrire</button>
+    </form>
+    <br />
+    <div class="swipper mon-slider" id="mon-slider">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <img
+            src="https://www.innovationstory.fr/wp-content/uploads/2020/04/Capture-d%E2%80%99e%CC%81cran-2020-04-24-a%CC%80-12.13.18-759x500.png"
+            alt="lexus"
+          />
+        </div>
+        <div class="swiper-slide">
+          <img
+            src="https://youmatter.world/app/uploads/sites/3/2019/05/digital-labor-travail-du-clic.jpg"
+            alt="skyline"
+          />
+        </div>
+
+        <div class="swiper-slide">
+          <img
+            src="https://img.freepik.com/photos-gratuite/travailleur-editeur-video-debout-devant-camera-souriant-travaillant-dans-bureau-agence-creation-tenant_482257-3426.jpg?size=626&ext=jpg&ga=GA1.1.1546980028.1704326400&semt=ais"
+            alt="Supra"
+          />
+        </div>
+      </div>
+      <div class="swiper-button-next"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-pagination"></div>
+    </div>
+
+    <br />
+    <br />
+    <br />
+
+    <main class="portfolio">
+      <div class="filters">
+        <ul>
+          <li data-filter="all" class="active">Tous les projets</li>
+          <li data-filter="cd">Création & Design</li>
+          <li data-filter="cm">Com' Digitale</li>
+          <li data-filter="cdi">Développement web</li>
+          <li data-filter="3d">Animation 3D</li>
+          <li data-filter="jv">Jeux vidéo</li>
+        </ul>
+      </div>
+      <div class="portfolio-elements">
+        <div class="card filtr-item" data-category="cd">
+          <div class="card-header">
+            <p class="card-title">Creative Personnal identity</p>
+            <div class="card-axe">Creation & Design</div>
+          </div>
+          <a
+            href="https://www.lecoindesentrepreneurs.fr/wp-content/uploads/2021/09/embaucher-un-salarie.png"
+            ><img
+              src="https://www.lecoindesentrepreneurs.fr/wp-content/uploads/2021/09/embaucher-un-salarie.png"
+              alt="Motion"
+            />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="3d">
+          <div class="card-header">
+            <p class="card-title">Modélisation personnage</p>
+            <div class="card-axe">Animation 3D</div>
+          </div>
+          <a
+            href="https://media.routard.com/image/24/2/nomade-digital-3.1594242.w740.jpg"
+            ><img
+              src="https://media.routard.com/image/24/2/nomade-digital-3.1594242.w740.jpg"
+              alt="Showreel"
+            />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="jv">
+          <div class="card-header">
+            <p class="card-title">Plateformer</p>
+            <div class="card-axe">Jeu Vidéo</div>
+          </div>
+          <a
+            href="https://comarketing-news.fr/wp-content/uploads/chiffres-jeu-video.jpg"
+            ><img
+              src="https://comarketing-news.fr/wp-content/uploads/chiffres-jeu-video.jpg"
+              alt="Showreel"
+            />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="cdi">
+          <div class="card-header">
+            <p class="card-title">Site Web</p>
+            <div class="card-axe">Coding Digital Innovation</div>
+          </div>
+          <a
+            href="https://www.canadafrancais.com/wp-content/uploads/sites/11/2021/11/DIGITALC.jpg"
+            ><img
+              src="https://www.canadafrancais.com/wp-content/uploads/sites/11/2021/11/DIGITALC.jpg"
+              alt="Showreel"
+            />
+          </a>
+        </div>
+        <div class="card filtr-item" data-category="cm">
+          <div class="card-header">
+            <p class="card-title">Campagne SPA</p>
+            <div class="card-axe">Com et Marketing</div>
+          </div>
+          <a
+            href="https://i0.wp.com/www.famille-nomade-digitale.com/wp-content/uploads/2023/07/defi-travail-a-distance-digitalnomad.jpeg?resize=1024%2C640&ssl=1"
+            ><img
+              src="https://i0.wp.com/www.famille-nomade-digitale.com/wp-content/uploads/2023/07/defi-travail-a-distance-digitalnomad.jpeg?resize=1024%2C640&ssl=1"
+              alt="Showreel"
+            />
+          </a>
+        </div>
+      </div>
+    </main>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/filterizr/2.2.4/vanilla.filterizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/simplelightbox/2.10.1/simplelightbox.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
